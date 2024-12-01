@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import { SearchManufacture } from ".";
-import React, { useState, FormEvent } from "react";
+import React, { useState } from "react";
 import { SetProps } from "@/types";
 
 const SearchButton = ({ otherClasses }: { otherClasses: string }) => {

@@ -10,7 +10,6 @@ import {
   ShowMore,
 } from "../components";
 import { fetchCars } from "@/utils";
-import { CarProps, HomeProps } from "@/types";
 import { fuels, yearsOfProduction } from "@/constants";
 import Image from "next/image";
 
@@ -42,7 +41,7 @@ export default function Home() {
       });
 
       setAllCars(result);
-    } catch (error) {
+    } catch {
       console.log("error");
     } finally {
       setLoading(false);
@@ -52,8 +51,6 @@ export default function Home() {
   useEffect(() => {
     getCars();
   }, [fuel, manufacturer, year, limit, model]);
-
-  const isDataEmpty = !Array.isArray(allCars) || allCars.length < 1 || !allCars;
 
   return (
     <main className=" overflow-hidden">

@@ -11,7 +11,7 @@ import {
 } from "@headlessui/react";
 import { CustomFilterProps } from "@/types";
 
-function CustomFilter({ title, options, setFilter }: CustomFilterProps) {
+function CustomFilter({ options, setFilter }: CustomFilterProps) {
   const [selected, setSelected] = useState(options[0]);
 
   return (

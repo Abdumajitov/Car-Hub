@@ -10,7 +10,7 @@ import {
   Transition,
 } from "@headlessui/react";
 import Image from "next/image";
-import { useState, Fragment, act } from "react";
+import { useState, Fragment } from "react";
 import { manufacturers } from "@/constants";
 
 function SearchManufacture({ selected, setSelected }: SearchManufactureProps) {
