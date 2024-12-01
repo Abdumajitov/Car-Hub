@@ -12,7 +12,7 @@ export interface CustomButtonProps {
 
 export interface SearchManufactureProps {
   selected: string;
-  setSelected: Dispatch<SetStateAction<string>>;
+  setSelected: any;
 }
 
 export interface CarProps {
